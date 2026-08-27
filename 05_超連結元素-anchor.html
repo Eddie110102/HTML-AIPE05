@@ -21,9 +21,42 @@
 
     <hr />
     <h2>超連結 + 清單</h2>
+    <ul>
+      <!-- 方式一： li > a > 文字 -->
+      <li>
+        <a
+          href="https://www.ispan.com.tw"
+          target="_blank"
+          style="background-color: lightblue"
+          >iSpan資展國際</a
+        >
+      </li>
+
+      <!-- 方式二： a > li > 文字 -->
+      <a href="https://www.ispan.com.tw" target="_blank">
+        <li style="background-color: lightblue">iSpan資展國際</li>
+      </a>
+
+      <!-- 方式三： li > a > p > 文字 -->
+      <li>
+        <a href="https://www.ispan.com.tw" target="_blank">
+          <div style="background-color: lightblue">iSpan資展國際</div>
+        </a>
+      </li>
+    </ul>
 
     <hr />
-    <h2>網頁內部連結(錨點)</h2>
+    <h2>單一網頁內部連結(錨點)</h2>
+    <a href="#eddie">錨點一</a>
+    <a href="#target2">錨點二</a>
+    <a href="#target3">錨點三</a>
+    <div style="background-color: lightblue; height: 100vh"></div>
+    <p id="eddie">指定目標-1</p>
+    <div style="background-color: salmon; height: 100vh"></div>
+    <p id="target2">指定目標-2</p>
+    <div style="background-color: lightgreen; height: 100vh"></div>
+    <p id="target3">指定目標-3</p>
+    <div style="background-color: lightpink; height: 100vh"></div>
 
     <hr />
     <h2>電子郵件</h2>
