@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS選擇器</title>
+    <!-- 內部樣式表 -->
+    <style>
+      /* CSS語法 */
+      /* 
+        CSS選擇器 {
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+        }
+      */
+      /* 標籤選擇器 */
+      h2,h3,h4,h5,h6 {
+        color: blue;
+        font-size: 40px;
+        font-weight: 100;
+      }
+
+      p {
+        /* color: orange; */
+        font-size: 60px;
+      }
+
+      /* 類別選擇器 */
+      .orange{
+        color: orange;
+      }
+
+      .yellow{
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS選擇器</h1>
+    <h2>標題元素-1</h2>
+    <h2 class="orange">標題元素-2</h2>
+    <h2>標題元素-3</h2>
+    <h3 class="orange">標題元素</h3>
+    <p class="orange">段落元素-1</p>
+    <p class="yellow">段落元素-2</p>
+  </body>
+</html>
