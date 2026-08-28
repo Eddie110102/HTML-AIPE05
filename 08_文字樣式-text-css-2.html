@@ -4,26 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>文字樣式</title>
+    <!-- 外部連結/檔案 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Playwrite+DE+LA+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 內部樣式表 -->
     <style>
       /* 引入伺服器字型 */
       @font-face {
-        font-family: 'Cursive_Script';
+        font-family: "Cursive_Script";
         src: url(./fonts/Cursive_Script.ttf);
       }
       p {
         font-size: 30px;
       }
 
-      .font1{
+      .font1 {
         font-family: "標楷體";
       }
 
-      .font2{
+      .font2 {
         font-family: "新細明體";
       }
 
-      .font3{
-        font-family: 'Cursive_Script';
+      .font3 {
+        font-family: "Cursive_Script";
+      }
+
+      .goround {
+        font-family: "Chiron GoRound TC";
+      }
+
+      .playwrite {
+        font-family: "Playwrite DE LA Guides", "Chiron GoRound TC";
       }
     </style>
   </head>
@@ -34,5 +50,7 @@
     <p class="font1">段落元素 - 標楷體 abcdef 123456 !</p>
     <p class="font2">段落元素 - 新細明體 abcdef 123456 !</p>
     <p class="font3">段落元素 - Cursive_Script字型 abcdef 123456 !</p>
+    <p class="goround">段落元素 - GoRound字型 abcdef 123456 !</p>
+    <p class="playwrite">段落元素 - PlayWrite字型 abcdef 123456 !</p>
   </body>
 </html>
