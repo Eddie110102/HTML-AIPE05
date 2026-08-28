@@ -16,7 +16,11 @@
         }
       */
       /* 標籤選擇器 */
-      h2,h3,h4,h5,h6 {
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         color: blue;
         font-size: 40px;
         font-weight: 100;
@@ -28,12 +32,29 @@
       }
 
       /* 類別選擇器 */
-      .orange{
+      .orange {
         color: orange;
       }
 
-      .yellow{
+      .yellow {
         color: yellowgreen;
+      }
+
+      /* 結合使用方式 */
+      /* 1. 選擇器連在一起，指定一個元素的條件:  選擇器1選擇器2 */
+      h2.orange {
+        color: purple;
+      }
+
+      /* 2. 選擇器之間有空白，指定父層(外層)條件、指定元素的條件: 選擇器1 選擇器2 */
+      h2 .orange {
+        font-size: 150px;
+      }
+
+      /* 3. 選擇器之間有一個>符號，指定父層與子層條件: 選擇器1>選擇器2 */
+      h2 > .orange {
+        font-size: 60px;
+        color: pink;
       }
     </style>
   </head>
@@ -42,6 +63,14 @@
     <h2>標題元素-1</h2>
     <h2 class="orange">標題元素-2</h2>
     <h2>標題元素-3</h2>
+    <h2>標題元素-4 <span class="orange">子層 span元素身上有.orange</span></h2>
+    <h2>
+      標題元素-4
+      <span
+        >子層 span元素
+        <span class="orange">孫層 span元素身上有.orange</span>
+      </span>
+    </h2>
     <h3 class="orange">標題元素</h3>
     <p class="orange">段落元素-1</p>
     <p class="yellow">段落元素-2</p>
