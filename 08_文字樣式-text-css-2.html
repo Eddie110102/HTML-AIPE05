@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字樣式</title>
+    <style>
+      /* 引入伺服器字型 */
+      @font-face {
+        font-family: 'Cursive_Script';
+        src: url(./fonts/Cursive_Script.ttf);
+      }
+      p {
+        font-size: 30px;
+      }
+
+      .font1{
+        font-family: "標楷體";
+      }
+
+      .font2{
+        font-family: "新細明體";
+      }
+
+      .font3{
+        font-family: 'Cursive_Script';
+      }
+    </style>
+  </head>
+  <body>
+    <h1>文字樣式</h1>
+    <h2>文字字型</h2>
+    <p>段落元素 - 預設正黑體 abcdef 123456 !</p>
+    <p class="font1">段落元素 - 標楷體 abcdef 123456 !</p>
+    <p class="font2">段落元素 - 新細明體 abcdef 123456 !</p>
+    <p class="font3">段落元素 - Cursive_Script字型 abcdef 123456 !</p>
+  </body>
+</html>
