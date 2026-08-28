@@ -8,18 +8,41 @@
   <body>
     <h1>文字樣式</h1>
     <h2>文字顏色</h2>
-    <p style="color: #00ff7f;">段落元素</p>
-    <p style="color: #0e79dd;">段落元素</p>
+    <p style="color: #00ff7f">段落元素</p>
+    <p style="color: #0e79dd">段落元素</p>
     <p>段落元素</p>
-    <hr>
+    <hr />
     <h2>文字大小</h2>
-    <span style="font-size: 40px;">行內容器 (40px)</span>
-    <span style="font-size: 8px;">行內容器 (8px)</span>
-    <span style="font-size: 70%;">行內容器 (70%)</span>
-    <span style="color: red;">行內容器 (預設大小)</span>
-    <span style="font-size: 2em;">行內容器 (2em)</span>
-    <span style="font-size: 2rem;">行內容器 (2rem)</span>
-    <span style="font-size: 1vw;">行內容器 (1vw)</span>
-    <span style="font-size: 1vh;">行內容器 (1vh)</span>
+    <!-- 父層是 body -->
+    <span style="font-size: 40px">行內容器 (40px)</span>
+    <span style="font-size: 8px">行內容器 (8px)</span>
+    <span style="font-size: 70%">行內容器 (70%)</span>
+    <span style="color: red">行內容器 (預設大小)</span>
+    <span style="font-size: 2em">行內容器 (2em)</span>
+    <span style="font-size: 2rem">行內容器 (2rem)</span>
+    <span style="font-size: 1vw">行內容器 (1vw)</span>
+    <span style="font-size: 1vh">行內容器 (1vh)</span>
+    <!-- 父層 div 文字大小 30px -->
+    <div style="font-size: 30px">
+      <span style="font-size: 40px">行內容器 (40px)</span>
+      <span style="font-size: 8px">行內容器 (8px)</span>
+      <span style="font-size: 70%">行內容器 (70%)</span>
+      <span style="color: red">行內容器 (預設大小)</span>
+      <span style="font-size: 2em">行內容器 (2em)</span>
+      <span style="font-size: 2rem">行內容器 (2rem)</span>
+    </div>
+    <!-- 父層 div 文字大小 5em -->
+    <div style="font-size: 5em">
+      <span style="font-size: 40px">行內容器 (40px)</span>
+      <span style="font-size: 8px">行內容器 (8px)</span>
+      <span style="font-size: 70%">行內容器 (70% * 5em)</span>
+      <span style="color: red">行內容器 (預設大小 5em)</span>
+      <span style="font-size: 2em">行內容器 (2em * 5em)</span>
+      <span style="font-size: 2rem">行內容器 (2rem)</span>
+    </div>
+    <hr />
+    <h2>文字粗細</h2>
+    <h3 style="font-size: 100px; font-weight: bold">標題元素</h3>
+    <p style="font-size: 100px; font-weight: normal">段落元素</p>
   </body>
 </html>
