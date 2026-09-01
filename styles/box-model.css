@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+    margin: 0;
+}
+
 img {
   /* 背景色 */
   background-color: pink;
@@ -55,4 +59,15 @@ img {
   height: 50px;
   background-color: lightblue;
   border: 3px solid navy;
+
+  border-radius: 52px;
+}
+
+.border-box{
+    box-sizing: border-box;
+}
+
+
+.box{
+    font-size: 0;
 }
