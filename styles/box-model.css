@@ -1,0 +1,12 @@
+img{
+    /* 內容 */
+    width: 300px;
+    height: 300px;
+
+    /* 邊框 */
+    /* border: 5px solid red; */
+    border-top: 5px solid red;
+    border-right: 10px solid navy;
+    border-bottom: 20px solid green;
+    border-left: 40px solid pink;
+}
