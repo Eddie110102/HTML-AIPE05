@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS權重</title>
+    <style>
+      * {
+        color: yellow;
+      }
+      h2 {
+        color: red;
+      }
+
+      .font3 {
+        color: purple;
+        text-decoration: underline;
+      }
+
+      .font1 {
+        color: blue;
+        font-size: 100px;
+      }
+      #font2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS權重</h1>
+    <h2 class="font3 font1">CSS選擇器權重</h2>
+    <!-- 藍 -->
+    <h2 class="font1" id="font2">CSS選擇器權重</h2>
+    <!-- 綠 -->
+    <h2 id="font2" style="color: pink">CSS選擇器權重</h2>
+    <!-- 粉 -->
+    <h2>CSS選擇器權重</h2>
+    <!-- 紅 -->
+  </body>
+</html>
