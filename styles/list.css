@@ -6,7 +6,21 @@
   list-style-type: upper-roman;
 }
 
-.picture{
-    list-style-type: none;
-    list-style-image: url(../images/arrow-small.jpg);
+.picture {
+  list-style-type: none;
+  list-style-image: url(../images/arrow-small.jpg);
+}
+
+/* 隱藏預設符號，使用偽類選擇器 */
+.ul2 {
+  list-style-type: none;
+}
+
+/* ::before、::after */
+.ul2 > li::before {
+  content: "♠ ";
+}
+
+.ul2 > li::after {
+  content: " ❤";
 }
