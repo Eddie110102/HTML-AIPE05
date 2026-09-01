@@ -1,3 +1,4 @@
+/* 第一組（外部連結） */
 .anchor1:link {
   text-decoration: none;
 }
@@ -15,6 +16,7 @@
   color: lightblue;
 }
 
+/* 第二組（內部連結） */
 .anchor2:link {
   text-decoration: none;
   color: red;
