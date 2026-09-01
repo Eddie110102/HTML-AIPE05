@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   /* 背景色 */
   background-color: pink;
@@ -36,10 +40,19 @@ img {
   border-radius: 10px;
 }
 
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  /* 文字水平、垂直置中效果 */
+  text-align: center;
+  line-height: 200px;
+}
 
-.circle{
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 50%;
+.capsule {
+  width: 400px;
+  height: 50px;
+  background-color: lightblue;
+  border: 3px solid navy;
 }
