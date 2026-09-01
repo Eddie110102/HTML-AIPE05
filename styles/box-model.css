@@ -2,11 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-img {
+img,
+.box {
   /* 背景色 */
   background-color: pink;
   /* 內容 */
@@ -45,13 +46,13 @@ img {
 }
 
 .circle {
-  width: 200px;
-  height: 200px;
+  width: 75px;
+  height: 75px;
   border: 2px solid black;
   border-radius: 50%;
   /* 文字水平、垂直置中效果 */
   text-align: center;
-  line-height: 200px;
+  line-height: 75px;
 }
 
 .capsule {
@@ -63,11 +64,18 @@ img {
   border-radius: 52px;
 }
 
-.border-box{
-    box-sizing: border-box;
+.border-box {
+  box-sizing: border-box;
 }
 
+.nospace {
+  font-size: 0;
+}
 
-.box{
-    font-size: 0;
+.center {
+  margin: 50px auto;
+}
+
+.box2 {
+  text-align: center;
 }
