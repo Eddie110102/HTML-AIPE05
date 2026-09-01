@@ -31,4 +31,15 @@ img {
   margin-right: 100px;
   margin-bottom: 200px;
   margin-left: 400px; */
+
+  /* 邊框圓角 */
+  border-radius: 10px;
+}
+
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
 }
