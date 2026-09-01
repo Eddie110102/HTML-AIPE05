@@ -20,3 +20,7 @@ thead > tr {
 tbody > tr:nth-child(odd) {
   background-color: #cccccc;
 }
+
+tbody tr:hover{
+    background-color: pink;
+}
