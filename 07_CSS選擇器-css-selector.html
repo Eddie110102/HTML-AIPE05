@@ -73,6 +73,30 @@
       .fwbold{
         font-weight: bold;
       }
+
+      /* ID選擇器 */
+      /* 
+        #ID值 {
+          CSS屬性:CSS屬性值;
+          CSS屬性:CSS屬性值;
+          CSS屬性:CSS屬性值;
+        }
+      */
+
+      #theH1{
+        font-size: 100px;
+        font-style: italic;
+      }
+
+      /* 全域選擇器 */
+      /* 
+        * {
+          CSS屬性: CSS屬性值;
+        }
+      */
+      *{
+        text-decoration: underline solid red;
+      }
     </style>
   </head>
   <body>
@@ -93,5 +117,13 @@
     <p class="yellow">段落元素-2</p>
     <span class="red fwbold fz20">組合樣式</span>
     <span class="blue fwbold fz20">組合樣式</span>
+
+    <p id="theH1">段落元素</p>
+    <p id="theH2">段落元素</p>
+
+    <script>
+      const theH1 = document.querySelector('#theH1')
+      theH1.style.fontSize = '10px'
+    </script>
   </body>
 </html>
