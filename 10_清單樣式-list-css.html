@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清單樣式</title>
+    <link rel="stylesheet" href="./styles/list.css">
+  </head>
+  <body>
+    <h1>清單樣式</h1>
+    <h2>項目清單</h2>
+    <ul class="ul1">
+      <!-- li{單一項目內容$}*5 -->
+      <li>單一項目內容1</li>
+      <li>單一項目內容2</li>
+      <li>單一項目內容3</li>
+      <li>單一項目內容4</li>
+      <li>單一項目內容5</li>
+    </ul>
+
+    <hr />
+    <h2>序號清單</h2>
+    <!-- ol>li{單一項目內容$$}*5 -->
+    <ol class="ol1">
+      <li>單一項目內容01</li>
+      <li>單一項目內容02</li>
+      <li>單一項目內容03</li>
+      <li>單一項目內容04</li>
+      <li>單一項目內容05</li>
+    </ol>
+
+    <hr />
+    <h2>巢狀清單</h2>
+    <ul>
+      <li>第一層單一項目內容-1</li>
+      <li>
+        第一層單一項目內容-2
+        <!-- 子層清單 -->
+        <ul>
+          <li>第二層單一項目內容-2-1</li>
+          <li>第二層單一項目內容-2-2</li>
+          <li>
+            第二層單一項目內容-2-3
+            <ol class="picture">
+              <li>第三層單一項目內容-2-3-1</li>
+              <li>第三層單一項目內容-2-3-2</li>
+              <li>第三層單一項目內容-2-3-3</li>
+              <li>第三層單一項目內容-2-3-4</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li>第一層單一項目內容-3</li>
+      <li>第一層單一項目內容-4</li>
+      <li>第一層單一項目內容-5</li>
+    </ul>
+
+    <hr />
+    <h2>定義清單</h2>
+    <dl>
+      <!-- <dt>名詞</dt> -->
+      <!-- <dd>名詞補充說明/解釋</dd> -->
+      <dt>車速突然改變</dt>
+      <dd>全新的高 g 值加速度計會感測到最高可達 256 g 的急劇加速或減速。</dd>
+      <dt>行進方向驟變</dt>
+      <dd>高動態範圍陀螺儀可監測車輛行駛方向的劇烈改變。</dd>
+      <dt>名詞</dt>
+      <dd>名詞解釋-1</dd>
+      <dd>名詞解釋-2</dd>
+      <dd>名詞解釋-3</dd>
+      <dt>名詞A</dt>
+      <dd>
+        <ul>
+          <li>名詞A解釋-1</li>
+          <li>名詞A解釋-2</li>
+          <li>名詞A解釋-3</li>
+        </ul>
+      </dd>
+    </dl>
+  </body>
+</html>

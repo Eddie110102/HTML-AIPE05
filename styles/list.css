@@ -1,0 +1,12 @@
+.ul1 {
+  list-style-type: circle;
+}
+
+.ol1 {
+  list-style-type: upper-roman;
+}
+
+.picture{
+    list-style-type: none;
+    list-style-image: url(../images/arrow-small.jpg);
+}
