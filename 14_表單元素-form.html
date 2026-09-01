@@ -12,7 +12,7 @@
     <form action="#" method="get" enctype="application/x-www-form-urlencoded">
       <div class="q1">
         <!-- 單行文字控制項 -->
-        <label for="myName"  class="t1">姓名</label>
+        <label for="myName" class="t1">姓名</label>
         <input
           type="text"
           name="userName"
@@ -36,7 +36,7 @@
       </div>
       <div class="q1">
         <!-- 多行文字控制項 -->
-        <label for="myMemo"  class="t1">備忘錄</label>
+        <label for="myMemo" class="t1">備忘錄</label>
         <textarea
           name="userMemo"
           id="myMemo"
@@ -47,6 +47,67 @@
         >
     預設文字</textarea
         >
+      </div>
+
+      <div class="q1">
+        <!-- 單選控制項 -->
+        <span class="t1">性別</span>
+        <input type="radio" name="userGender" id="male" value="male" /><label
+          for="male"
+          >男性</label
+        >
+        <input
+          type="radio"
+          name="userGender"
+          id="female"
+          value="female"
+        /><label for="female">女性</label>
+        <input
+          type="radio"
+          name="userGender"
+          id="hidden"
+          value="hidden"
+          checked
+        /><label for="hidden">不顯示</label>
+      </div>
+
+      <div class="q1">
+        <span class="t1">複選題</span>
+        <!-- 複選控制項 -->
+        <label for="o1">
+          <input
+            type="checkbox"
+            name="question1"
+            id="o1"
+            value="option1"
+            checked
+          />Option1
+        </label>
+        <label for="o2">
+          <input
+            type="checkbox"
+            name="question1"
+            id="o2"
+            value="option2"
+          />Option2
+        </label>
+        <label for="o3">
+          <input
+            type="checkbox"
+            name="question1"
+            id="o3"
+            value="option3"
+            checked
+          />Option3
+        </label>
+        <label for="o4">
+          <input
+            type="checkbox"
+            name="question1"
+            id="o4"
+            value="option4"
+          />Option4
+        </label>
       </div>
       <div class="btns">
         <!-- 按鈕 (送出/重設) -->

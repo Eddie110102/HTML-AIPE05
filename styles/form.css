@@ -23,4 +23,5 @@ form {
 
 textarea {
   /* 右下角放大縮小功能 */
+  resize: vertical;
 }
