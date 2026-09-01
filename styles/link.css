@@ -1,0 +1,34 @@
+.anchor1:link {
+  text-decoration: none;
+}
+
+.anchor1:visited {
+  color: gray;
+}
+
+.anchor1:hover {
+  color: navy;
+  text-decoration: underline;
+}
+
+.anchor1:active {
+  color: lightblue;
+}
+
+.anchor2:link {
+  text-decoration: none;
+  color: red;
+}
+
+.anchor2:visited {
+  color: rgb(114, 0, 0);
+}
+
+.anchor2:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+.anchor2:active {
+  color: rgb(214, 54, 81);
+}
