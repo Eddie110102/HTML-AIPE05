@@ -10,29 +10,52 @@
     <h1>表單元素</h1>
     <!-- 14...html?key=value&key=value... -->
     <form action="#" method="get" enctype="application/x-www-form-urlencoded">
-      <!-- 單行文字控制項 -->
-      <label for="myName">姓名</label>
-      <input
-        type="text"
-        name="userName"
-        value="王大明"
-        placeholder="請輸入您的大名"
-        id="myName"
-      />
-      <!-- 密碼控制項 -->
-      <label for="myPWD">密碼</label>
-      <input
-        type="password"
-        name="userPassword"
-        id="myPWD"
-        value=""
-        placeholder="請輸入6-8位字元"
-        maxlength="8"
-        minlength="6"
-      />
-      <!-- 多行文字控制項 -->
-      <label for="myMemo">備忘錄</label>
-      <textarea name="userMemo" id="myMemo" cols="30" rows="10" placeholder="最大上限150字。" maxlength="150">預設文字</textarea>
+      <div class="q1">
+        <!-- 單行文字控制項 -->
+        <label for="myName"  class="t1">姓名</label>
+        <input
+          type="text"
+          name="userName"
+          value="王大明"
+          placeholder="請輸入您的大名"
+          id="myName"
+        />
+      </div>
+      <div class="q1">
+        <!-- 密碼控制項 -->
+        <label for="myPWD" class="t1">密碼</label>
+        <input
+          type="password"
+          name="userPassword"
+          id="myPWD"
+          value=""
+          placeholder="請輸入6-8位字元"
+          maxlength="8"
+          minlength="6"
+        />
+      </div>
+      <div class="q1">
+        <!-- 多行文字控制項 -->
+        <label for="myMemo"  class="t1">備忘錄</label>
+        <textarea
+          name="userMemo"
+          id="myMemo"
+          cols="30"
+          rows="10"
+          placeholder="最大上限150字。"
+          maxlength="150"
+        >
+    預設文字</textarea
+        >
+      </div>
+      <div class="btns">
+        <!-- 按鈕 (送出/重設) -->
+        <input type="submit" value="送出" disabled />
+        <input type="reset" value="清除" />
+        <button type="submit">送出</button>
+        <button type="reset">清除</button>
+        <button type="button" id="button1" disabled>一般按鈕</button>
+      </div>
     </form>
   </body>
 </html>
