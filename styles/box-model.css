@@ -1,12 +1,34 @@
-img{
-    /* 內容 */
-    width: 300px;
-    height: 300px;
+img {
+  /* 背景色 */
+  background-color: pink;
+  /* 內容 */
+  width: 300px;
+  height: 300px;
 
-    /* 邊框 */
-    /* border: 5px solid red; */
-    border-top: 5px solid red;
+  /* 邊框 */
+  border: 5px solid red;
+  /* border-top: 5px solid red;
     border-right: 10px solid navy;
     border-bottom: 20px solid green;
-    border-left: 40px solid pink;
+    border-left: 40px solid pink; */
+
+  /* 內邊距 */
+  padding: 20px;
+  /* padding: 20px 40px; */
+  /* padding: 20px 40px 80px; */
+  /* padding: 20px 40px 80px 160px; */
+  /* padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+    padding-left: 160px; */
+
+  /* 外邊距 */
+  margin: 50px;
+  /* margin: 50px 100px; */
+  /* margin: 50px 100px 200px; */
+  /* margin: 50px 100px 200px 400px; */
+  /* margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 200px;
+  margin-left: 400px; */
 }
