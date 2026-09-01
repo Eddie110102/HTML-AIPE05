@@ -1,0 +1,40 @@
+/* CSS語法 */
+.container {
+  width: 650px;
+  margin: auto;
+}
+.company {
+  font-size: 16px;
+}
+.time,
+figcaption {
+  font-size: 12px;
+  font-weight: normal;
+  color: gray;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: justify;
+}
+.details {
+  list-style-type: none;
+}
+.details > li::before {
+  content: "● ";
+}
+.details ul {
+  list-style-type: none;
+}
+.details ul li::before {
+  content: "－ ";
+}
+
+img {
+  width: 100%;
+}
+
+h1{
+    color: blue;
+}
