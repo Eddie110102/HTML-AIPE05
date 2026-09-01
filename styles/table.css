@@ -10,3 +10,13 @@ td {
   text-align: center;
   height: 50px;
 }
+
+thead > tr {
+  background-color: #9a0036;
+  color: white;
+}
+
+/* nth-child(數字、2n/2n+1、odd/even) */
+tbody > tr:nth-child(odd) {
+  background-color: #cccccc;
+}
