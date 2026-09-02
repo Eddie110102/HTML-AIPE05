@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 2px solid black;
+  list-style-type: none;
+  display: flex;
+}
