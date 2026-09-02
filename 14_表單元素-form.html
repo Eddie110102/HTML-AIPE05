@@ -10,122 +10,132 @@
     <h1>表單元素</h1>
     <!-- 14...html?key=value&key=value... -->
     <form action="#" method="get" enctype="multipart/form-data">
-      <div class="q1">
-        <!-- 單行文字控制項 -->
-        <label for="myName" class="t1">姓名</label>
-        <input
-          type="text"
-          name="userName"
-          value="王大明"
-          placeholder="請輸入您的大名"
-          id="myName"
-        />
-      </div>
-      <div class="q1">
-        <!-- 密碼控制項 -->
-        <label for="myPWD" class="t1">密碼</label>
-        <input
-          type="password"
-          name="userPassword"
-          id="myPWD"
-          value=""
-          placeholder="請輸入6-8位字元"
-          maxlength="8"
-          minlength="6"
-        />
-      </div>
-      <div class="q1">
-        <!-- 多行文字控制項 -->
-        <label for="myMemo" class="t1">備忘錄</label>
-        <textarea
-          name="userMemo"
-          id="myMemo"
-          cols="30"
-          rows="10"
-          placeholder="最大上限150字。"
-          maxlength="150"
-        >
+      <fieldset>
+        <legend>基本資料（一）</legend>
+        <div class="q1">
+          <!-- 單行文字控制項 -->
+          <label for="myName" class="t1">姓名</label>
+          <input
+            type="text"
+            name="userName"
+            value="王大明"
+            placeholder="請輸入您的大名"
+            id="myName"
+          />
+        </div>
+        <div class="q1">
+          <!-- 密碼控制項 -->
+          <label for="myPWD" class="t1">密碼</label>
+          <input
+            type="password"
+            name="userPassword"
+            id="myPWD"
+            value=""
+            placeholder="請輸入6-8位字元"
+            maxlength="8"
+            minlength="6"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>基本資料（二）</legend>
+        <div class="q1">
+          <!-- 單選控制項 -->
+          <span class="t1">性別</span>
+          <input type="radio" name="userGender" id="male" value="male" /><label
+            for="male"
+            >男性</label
+          >
+          <input
+            type="radio"
+            name="userGender"
+            id="female"
+            value="female"
+          /><label for="female">女性</label>
+          <input
+            type="radio"
+            name="userGender"
+            id="hidden"
+            value="hidden"
+            checked
+          /><label for="hidden">不顯示</label>
+        </div>
+
+        <div class="q1">
+          <span class="t1">複選題</span>
+          <!-- 複選控制項 -->
+          <label for="o1">
+            <input
+              type="checkbox"
+              name="question1"
+              id="o1"
+              value="option1"
+              checked
+            />Option1
+          </label>
+          <label for="o2">
+            <input
+              type="checkbox"
+              name="question1"
+              id="o2"
+              value="option2"
+            />Option2
+          </label>
+          <label for="o3">
+            <input
+              type="checkbox"
+              name="question1"
+              id="o3"
+              value="option3"
+              checked
+            />Option3
+          </label>
+          <label for="o4">
+            <input
+              type="checkbox"
+              name="question1"
+              id="o4"
+              value="option4"
+            />Option4
+          </label>
+        </div>
+        
+      </fieldset>
+      <fieldset>
+        <legend>其他</legend>
+        <div class="q1">
+          <label for="myCity" class="t1">縣市</label>
+          <select name="userCity" id="myCity">
+            <!-- <select name="userCity" id="myCity" multiple size="10"> -->
+            <!-- option[value=City$]{縣市-$}*5 -->
+            <option value="default" hidden>請選擇</option>
+            <option value="City1">縣市-1</option>
+            <option value="City2">縣市-2</option>
+            <option value="City3" selected>縣市-3</option>
+            <option value="City4">縣市-4</option>
+            <option value="City5">縣市-5</option>
+          </select>
+        </div>
+        <div class="q1">
+          <label for="myFile" class="t1">檔案上傳</label>
+          <input type="file" name="userFile" id="myFile" multiple />
+        </div>
+        <div class="q1">
+          <!-- 多行文字控制項 -->
+          <label for="myMemo" class="t1">備忘錄</label>
+          <textarea
+            name="userMemo"
+            id="myMemo"
+            cols="30"
+            rows="10"
+            placeholder="最大上限150字。"
+            maxlength="150"
+          >
     預設文字</textarea
-        >
-      </div>
+          >
+        </div>
+      </fieldset>
 
-      <div class="q1">
-        <!-- 單選控制項 -->
-        <span class="t1">性別</span>
-        <input type="radio" name="userGender" id="male" value="male" /><label
-          for="male"
-          >男性</label
-        >
-        <input
-          type="radio"
-          name="userGender"
-          id="female"
-          value="female"
-        /><label for="female">女性</label>
-        <input
-          type="radio"
-          name="userGender"
-          id="hidden"
-          value="hidden"
-          checked
-        /><label for="hidden">不顯示</label>
-      </div>
-
-      <div class="q1">
-        <span class="t1">複選題</span>
-        <!-- 複選控制項 -->
-        <label for="o1">
-          <input
-            type="checkbox"
-            name="question1"
-            id="o1"
-            value="option1"
-            checked
-          />Option1
-        </label>
-        <label for="o2">
-          <input
-            type="checkbox"
-            name="question1"
-            id="o2"
-            value="option2"
-          />Option2
-        </label>
-        <label for="o3">
-          <input
-            type="checkbox"
-            name="question1"
-            id="o3"
-            value="option3"
-            checked
-          />Option3
-        </label>
-        <label for="o4">
-          <input
-            type="checkbox"
-            name="question1"
-            id="o4"
-            value="option4"
-          />Option4
-        </label>
-      </div>
-      <div class="q1">
-        <label for="myCity" class="t1">縣市</label>
-        <select name="userCity" id="myCity">
-          <!-- <select name="userCity" id="myCity" multiple size="10"> -->
-          <!-- option[value=City$]{縣市-$}*5 -->
-          <option value="default" hidden>請選擇</option>
-          <option value="City1">縣市-1</option>
-          <option value="City2">縣市-2</option>
-          <option value="City3" selected>縣市-3</option>
-          <option value="City4">縣市-4</option>
-          <option value="City5">縣市-5</option>
-        </select>
-      </div>
-      <div class="q1">
-        <label for="myFile" class="t1">檔案上傳</label>
-        <input type="file" name="userFile" id="myFile" multiple />
-      </div>
       <div class="btns">
         <!-- 按鈕 (送出/重設) -->
         <input type="submit" value="送出" disabled />

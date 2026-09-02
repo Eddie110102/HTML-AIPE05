@@ -1,6 +1,22 @@
 form {
   width: 600px;
+  /* border: 2px solid navy; */
+}
+
+fieldset {
   border: 2px solid navy;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+/* :first-child、:last-child */
+fieldset > :last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+legend {
+  padding: 0 15px;
 }
 
 .q1 {
