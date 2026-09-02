@@ -68,6 +68,42 @@
           />
         </div>
       </fieldset>
+      <fieldset>
+        <legend>文字輸入</legend>
+        <div class="q1">
+          <label for="myEmail" class="t1">email</label>
+          <input
+            type="email"
+            name="userEmail"
+            id="myEmail"
+            placeholder="請輸入您的信箱"
+            value=""
+          />
+        </div>
+        <div class="q1">
+          <label for="mySearch" class="t1">search</label>
+          <input type="search" name="userSearch" id="mySearch" />
+        </div>
+        <div class="q1">
+          <label for="myTelephone" class="t1">tel</label>
+          <input
+            type="tel"
+            name="userTelephone"
+            id="myTelephone"
+            pattern="^[0][9]\d{8}$"
+            maxlength="10"
+          />
+        </div>
+        <div class="q1">
+          <label for="myUrl" class="t1">url</label>
+        </div>
+        <input
+          type="url"
+          name="userUrl"
+          id="myUrl"
+          placeholder="https://www.example.com.tw"
+        />
+      </fieldset>
       <div class="btns">
         <button type="submit">送出</button>
       </div>

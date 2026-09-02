@@ -3,6 +3,8 @@
   box-sizing: border-box;
 }
 
+/* :not() */
+
 /* input[type="text"],
 input[type="password"], */
 input:not(
