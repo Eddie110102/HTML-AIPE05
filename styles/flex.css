@@ -4,10 +4,39 @@
 }
 
 .box {
+  height: 50px;
   border: 2px solid black;
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  /* 主軸對齊方式 */
   justify-content: center;
+  /* 切軸對齊方式 */
+  align-items: center;
+}
+
+/* 實際頁首 */
+header{
+  display: flex;
+  border: 2px solid black;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img{
+  height: 100%;
+  object-fit: contain;
+}
+
+.navlink {
+  height: 50px;
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  /* 主軸對齊方式 */
+  justify-content: center;
+  /* 切軸對齊方式 */
   align-items: center;
 }
