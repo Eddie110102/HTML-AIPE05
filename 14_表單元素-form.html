@@ -9,7 +9,7 @@
   <body>
     <h1>表單元素</h1>
     <!-- 14...html?key=value&key=value... -->
-    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+    <form action="#" method="get" enctype="multipart/form-data">
       <div class="q1">
         <!-- 單行文字控制項 -->
         <label for="myName" class="t1">姓名</label>
@@ -108,6 +108,23 @@
             value="option4"
           />Option4
         </label>
+      </div>
+      <div class="q1">
+        <label for="myCity" class="t1">縣市</label>
+        <select name="userCity" id="myCity">
+          <!-- <select name="userCity" id="myCity" multiple size="10"> -->
+          <!-- option[value=City$]{縣市-$}*5 -->
+          <option value="default" hidden>請選擇</option>
+          <option value="City1">縣市-1</option>
+          <option value="City2">縣市-2</option>
+          <option value="City3" selected>縣市-3</option>
+          <option value="City4">縣市-4</option>
+          <option value="City5">縣市-5</option>
+        </select>
+      </div>
+      <div class="q1">
+        <label for="myFile" class="t1">檔案上傳</label>
+        <input type="file" name="userFile" id="myFile" multiple />
       </div>
       <div class="btns">
         <!-- 按鈕 (送出/重設) -->
