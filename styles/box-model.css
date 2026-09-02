@@ -53,6 +53,11 @@ img,
   /* 文字水平、垂直置中效果 */
   text-align: center;
   line-height: 75px;
+
+  /* 定位 */
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
 
 .capsule {

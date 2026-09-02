@@ -1,0 +1,32 @@
+div {
+  border: 2px solid;
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+}
+
+.r {
+  color: navy;
+  position: relative;
+  /* 原點 (0,0) */
+  top: 700px;
+  left: 200px;
+}
+
+.a {
+  color: green;
+  position: absolute;
+  top: 700px;
+  left: 200px;
+}
+
+.f {
+  color: salmon;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.s {
+  color: blueviolet;
+}
