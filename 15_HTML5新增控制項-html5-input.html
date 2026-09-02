@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5新增控制項</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <h1>HTML5新增控制項</h1>
+    <form action="#">
+      <fieldset>
+        <legend>日期</legend>
+        <!-- 2026/09/02 -->
+        <div class="q1">
+          <label for="myDate" class="t1">Date</label>
+          <input
+            type="date"
+            name="userBirthday"
+            id="myDate"
+            value="2026-09-02"
+            min="2026-09-02"
+            max="2026-09-29"
+          />
+        </div>
+        <div class="q1">
+          <label for="myDatetimeL" class="t1">Datetime-Local</label>
+          <input
+            type="datetime-local"
+            name="userDatetimeLocal"
+            id="myDatetimeL"
+            value="2026-09-02T14:00"
+            min="2026-09-02T09:00"
+            max="2026-09-10T18:00"
+          />
+        </div>
+      </fieldset>
+      <div class="btns">
+        <button type="submit">送出</button>
+      </div>
+    </form>
+  </body>
+</html>
