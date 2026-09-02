@@ -139,6 +139,7 @@
             max="100"
             step="20"
           />
+          <span id="rangeOutput"></span>
         </div>
         <div class="q1">
           <label for="myNumber" class="t1">number</label>
@@ -157,5 +158,16 @@
         <button type="submit">送出</button>
       </div>
     </form>
+
+    <script>
+      const rangeInput = document.querySelector("#myRange");
+      const rangeOutput = document.querySelector("#rangeOutput");
+
+      rangeOutput.innerText = rangeInput.value;
+
+      rangeInput.addEventListener("input", function () {
+        rangeOutput.innerText = this.value;
+      });
+    </script>
   </body>
 </html>
