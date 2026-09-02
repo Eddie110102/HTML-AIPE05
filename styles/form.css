@@ -12,7 +12,8 @@ input:not(
   [type="checkbox"],
   [type="button"],
   [type="submit"],
-  [type="reset"]
+  [type="reset"],
+  [type=color],[type=range]
 ),
 textarea,
 select {
